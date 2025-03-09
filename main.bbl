@@ -1,0 +1,319 @@
+\begin{thebibliography}{}
+
+\bibitem[Abbasi et~al., 2004]{10.1001/jama.292.22.2771}
+Abbasi, N.~R., Shaw, H.~M., Rigel, D.~S., Friedman, R.~J., McCarthy, W.~H., Osman, I., Kopf, A.~W., and Polsky, D. (2004).
+\newblock {Early Diagnosis of Cutaneous MelanomaRevisiting the ABCD Criteria}.
+\newblock {\em JAMA}, 292(22):2771--2776.
+
+\bibitem[Abdelhalim et~al., 2021]{abdelhalim2021data}
+Abdelhalim, I. S.~A., Mohamed, M.~F., and Mahdy, Y.~B. (2021).
+\newblock Data augmentation for skin lesion using self-attention based progressive generative adversarial network.
+\newblock {\em Expert Systems with Applications}, 165:113922.
+
+\bibitem[Argenziano et~al., 2012]{argenziano2012early}
+Argenziano, G., Albertini, G., Castagnetti, F., De~Pace, B., Di~Lernia, V., Longo, C., Pellacani, G., Piana, S., Ricci, C., and Zalaudek, I. (2012).
+\newblock Early diagnosis of melanoma: what is the impact of dermoscopy?
+\newblock {\em Dermatologic Therapy}, 25(5):403--409.
+
+\bibitem[Argenziano et~al., 1998]{argenziano1998epiluminescence}
+Argenziano, G., Fabbrocini, G., Carli, P., De~Giorgi, V., Sammarco, E., and Delfino, M. (1998).
+\newblock Epiluminescence microscopy for the diagnosis of doubtful melanocytic skin lesions: comparison of the abcd rule of dermatoscopy and a new 7-point checklist based on pattern analysis.
+\newblock {\em Archives of dermatology}, 134(12):1563--1570.
+
+\bibitem[Bhattacharya et~al., 2017]{bhattacharya2017precision}
+Bhattacharya, A., Young, A., Wong, A., Stalling, S., Wei, M., and Hadley, D. (2017).
+\newblock Precision diagnosis of melanoma and other skin lesions from digital images.
+\newblock {\em AMIA Summits on Translational Science Proceedings}, 2017:220.
+
+\bibitem[Buslaev et~al., 2020]{buslaev2020albumentations}
+Buslaev, A., Iglovikov, V.~I., Khvedchenya, E., Parinov, A., Druzhinin, M., and Kalinin, A.~A. (2020).
+\newblock Albumentations: fast and flexible image augmentations.
+\newblock {\em Information}, 11(2):125.
+
+\bibitem[Codella et~al., 2017]{codella2017deep}
+Codella, N.~C., Nguyen, Q.-B., Pankanti, S., Gutman, D.~A., Helba, B., Halpern, A.~C., and Smith, J.~R. (2017).
+\newblock Deep learning ensembles for melanoma recognition in dermoscopy images.
+\newblock {\em IBM Journal of Research and Development}, 61(4/5):5--1.
+
+\bibitem[Corneli et~al., 2018]{corneli2018improving}
+Corneli, P., Zalaudek, I., Magaton~Rizzi, G., and di~Meo, N. (2018).
+\newblock Improving the early diagnosis of early nodular melanoma: can we do better?
+\newblock {\em Expert Review of Anticancer Therapy}, 18(10):1007--1012.
+
+\bibitem[Davis et~al., 2019]{davis2019current}
+Davis, L.~E., Shalin, S.~C., and Tackett, A.~J. (2019).
+\newblock Current state of melanoma diagnosis and treatment.
+\newblock {\em Cancer biology \& therapy}, 20(11):1366--1379.
+
+\bibitem[de~Carvalho et~al., 2019]{de2019development}
+de~Carvalho, T.~M., Noels, E., Wakkee, M., Udrea, A., and Nijsten, T. (2019).
+\newblock Development of smartphone apps for skin cancer risk assessment: progress and promise.
+\newblock {\em JMIR Dermatology}, 2(1):e13376.
+
+\bibitem[de~Lima and Krohling, 2022]{de2022exploring}
+de~Lima, L.~M. and Krohling, R.~A. (2022).
+\newblock Exploring advances in transformers and cnn for skin lesion diagnosis on small datasets.
+\newblock {\em arXiv preprint arXiv:2205.15442}.
+
+\bibitem[Deng et~al., 2009]{deng2009imagenet}
+Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., and Fei-Fei, L. (2009).
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em 2009 IEEE conference on computer vision and pattern recognition}, pages 248--255. Ieee.
+
+\bibitem[Di~Leo et~al., 2015]{di2015hierarchical}
+Di~Leo, C., Bevilacqua, V., Ballerini, L., Fisher, R., Aldridge, B., and Rees, J. (2015).
+\newblock Hierarchical classification of ten skin lesion classes.
+\newblock In {\em Proc. SICSA Dundee Medical Image Analysis Workshop}.
+
+\bibitem[Di~Leo et~al., 2010]{di2010automatic}
+Di~Leo, G., Paolillo, A., Sommella, P., and Fabbrocini, G. (2010).
+\newblock Automatic diagnosis of melanoma: a software system based on the 7-point check-list.
+\newblock In {\em 2010 43rd Hawaii international conference on system sciences}, pages 1--10. IEEE.
+
+\bibitem[Divito and Ferris, 2010]{divito2010advances}
+Divito, S.~J. and Ferris, L.~K. (2010).
+\newblock Advances and short comings in the early diagnosis of melanoma.
+\newblock {\em Melanoma Research}, 20(6):450--458.
+
+\bibitem[Domingues et~al., 2018]{domingues2018melanoma}
+Domingues, B., Lopes, J.~M., Soares, P., and P{\'o}pulo, H. (2018).
+\newblock Melanoma treatment in review.
+\newblock {\em ImmunoTargets and therapy}, 7:35.
+
+\bibitem[Dosovitskiy et~al., 2020]{dosovitskiy2020image}
+Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., et~al. (2020).
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
+\newblock {\em arXiv preprint arXiv:2010.11929}.
+
+\bibitem[Dzwierzynski, 2013]{dzwierzynski2013managing}
+Dzwierzynski, W.~W. (2013).
+\newblock Managing malignant melanoma.
+\newblock {\em Plastic and reconstructive surgery}, 132(3):446e--460e.
+
+\bibitem[Engasser and Warshaw, 2010]{engasser2010dermatoscopy}
+Engasser, H.~C. and Warshaw, E.~M. (2010).
+\newblock Dermatoscopy use by us dermatologists: a cross-sectional survey.
+\newblock {\em Journal of the American Academy of Dermatology}, 63(3):412--419.
+
+\bibitem[Esteva et~al., 2017]{esteva2017dermatologist}
+Esteva, A., Kuprel, B., Novoa, R.~A., Ko, J., Swetter, S.~M., Blau, H.~M., and Thrun, S. (2017).
+\newblock Dermatologist-level classification of skin cancer with deep neural networks.
+\newblock {\em nature}, 542(7639):115--118.
+
+\bibitem[Fink and Haenssle, 2017]{fink2017non}
+Fink, C. and Haenssle, H. (2017).
+\newblock Non-invasive tools for the diagnosis of cutaneous melanoma.
+\newblock {\em Skin Research and Technology}, 23(3):261--271.
+
+\bibitem[Giavina-Bianchi et~al., 2020]{giavina2020teledermatology}
+Giavina-Bianchi, M., Santos, A.~P., and Cordioli, E. (2020).
+\newblock Teledermatology reduces dermatology referrals and improves access to specialists.
+\newblock {\em EClinicalMedicine}, 29:100641.
+
+\bibitem[Giotis et~al., 2013]{giotis2013adaptive}
+Giotis, I., Bunte, K., Petkov, N., and Biehl, M. (2013).
+\newblock Adaptive matrices and filters for color texture classification.
+\newblock {\em Journal of Mathematical Imaging and Vision}, 47(1):79--92.
+
+\bibitem[Giotis et~al., 2015]{giotis2015med}
+Giotis, I., Molders, N., Land, S., Biehl, M., Jonkman, M.~F., and Petkov, N. (2015).
+\newblock Med-node: A computer-assisted melanoma diagnosis system using non-dermoscopic images.
+\newblock {\em Expert systems with applications}, 42(19):6578--6585.
+
+\bibitem[Glinz, 2007]{glinz2007non}
+Glinz, M. (2007).
+\newblock On non-functional requirements.
+\newblock In {\em 15th IEEE international requirements engineering conference (RE 2007)}, pages 21--26. IEEE.
+
+\bibitem[Grant-Kels et~al., 1999]{GRANTKELS1999539}
+Grant-Kels, J.~M., Bason, E.~T., and Grin, C.~M. (1999).
+\newblock The misdiagnosis of malignant melanoma.
+\newblock {\em Journal of the American Academy of Dermatology}, 40(4):539--548.
+
+\bibitem[Han et~al., 2018]{HAN20181529}
+Han, S.~S., Kim, M.~S., Lim, W., Park, G.~H., Park, I., and Chang, S.~E. (2018).
+\newblock Classification of the clinical images for benign and malignant cutaneous tumors using a deep learning algorithm.
+\newblock {\em Journal of Investigative Dermatology}, 138(7):1529--1538.
+
+\bibitem[He, 2019]{he2019mlframeworks}
+He, H. (2019).
+\newblock The state of machine learning frameworks in 2019.
+\newblock {\em The Gradient}.
+
+\bibitem[He et~al., 2016]{he2016deep}
+He, K., Zhang, X., Ren, S., and Sun, J. (2016).
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 770--778.
+
+\bibitem[Heidelburg and Erlangen, 2022]{dermis}
+Heidelburg, U. and Erlangen, U. (2022).
+\newblock Dermatology information system.
+\newblock \url{https://www.dermis.net/dermisroot/en/home/index.htm}.
+\newblock Accessed: 12-07-2022.
+
+\bibitem[Jafari et~al., 2017]{jafari2017extraction}
+Jafari, M.~H., Nasr-Esfahani, E., Karimi, N., Soroushmehr, S., Samavi, S., and Najarian, K. (2017).
+\newblock Extraction of skin lesions from non-dermoscopic images for surgical excision of melanoma.
+\newblock {\em International journal of computer assisted radiology and surgery}, 12(6):1021--1030.
+
+\bibitem[Jafari et~al., 2016]{7532837}
+Jafari, M.~H., Samavi, S., Soroushmehr, S. M.~R., Mohaghegh, H., Karimi, N., and Najarian, K. (2016).
+\newblock Set of descriptors for skin cancer diagnosis using non-dermoscopic color images.
+\newblock In {\em 2016 IEEE International Conference on Image Processing (ICIP)}, pages 2638--2642.
+
+\bibitem[Jaworek-Korjakowska and K{\l}eczek, 2016]{jaworek2016automatic}
+Jaworek-Korjakowska, J. and K{\l}eczek, P. (2016).
+\newblock Automatic classification of specific melanocytic lesions using artificial intelligence.
+\newblock {\em BioMed research international}, 2016.
+
+\bibitem[Jaworek-Korjakowska and Kleczek, 2018]{jaworek2018eskin}
+Jaworek-Korjakowska, J. and Kleczek, P. (2018).
+\newblock Eskin: study on the smartphone application for early detection of malignant melanoma.
+\newblock {\em Wireless Communications and Mobile Computing}, 2018.
+
+\bibitem[Jones et~al., 2019]{jones2019dermoscopy}
+Jones, O., Jurascheck, L., Van~Melle, M., Hickman, S., Burrows, N., Hall, P., Emery, J., and Walter, F. (2019).
+\newblock Dermoscopy for melanoma detection and triage in primary care: a systematic review.
+\newblock {\em BMJ open}, 9(8):e027529.
+
+\bibitem[Kabir et~al., 2021]{9564195}
+Kabir, M.~M., Mehera, P., Saha, A.~K., Mridha, M.~F., Hamid, M.~A., and Monowar, M.~M. (2021).
+\newblock Cnn-nsvm architecture for skin lesion classification using non-dermoscopic digital image.
+\newblock In {\em 2021 Joint 10th International Conference on Informatics, Electronics and Vision (ICIEV) and 2021 5th International Conference on Imaging, Vision and Pattern Recognition (icIVPR)}, pages 1--7.
+
+\bibitem[Kassianos et~al., 2015]{kassianos2015smartphone}
+Kassianos, A.~P., Emery, J., Murchie, P., and Walter, F.~M. (2015).
+\newblock Smartphone applications for melanoma detection by community, patient and generalist clinician users: a review.
+\newblock {\em British Journal of Dermatology}, 172(6):1507--1518.
+
+\bibitem[Kawahara et~al., 2016]{7493528}
+Kawahara, J., BenTaieb, A., and Hamarneh, G. (2016).
+\newblock Deep features to classify skin lesions.
+\newblock In {\em 2016 IEEE 13th International Symposium on Biomedical Imaging (ISBI)}, pages 1397--1400.
+
+\bibitem[Kawahara et~al., 2019]{8333693}
+Kawahara, J., Daneshvar, S., Argenziano, G., and Hamarneh, G. (2019).
+\newblock Seven-point checklist and skin lesion classification using multitask multimodal neural nets.
+\newblock {\em IEEE Journal of Biomedical and Health Informatics}, 23(2):538--546.
+
+\bibitem[Lee and Hirokawa, 2010]{lee2010dermatoscopy}
+Lee, J.~B. and Hirokawa, D. (2010).
+\newblock Dermatoscopy: Facts and controversies.
+\newblock {\em Clinics in dermatology}, 28(3):303--310.
+
+\bibitem[Marghoob et~al., 2009]{marghoob2009most}
+Marghoob, A.~A., Changchien, L., DeFazio, J., Dessio, W.~C., Malvehy, J., Zalaudek, I., Halpern, A.~C., and Scope, A. (2009).
+\newblock The most common challenges in melanoma diagnosis and how to avoid them.
+\newblock {\em Australasian Journal of Dermatology}, 50(1):1--13.
+
+\bibitem[Mosam and Todd, 2021]{mosam2021dermatology}
+Mosam, A. and Todd, G. (2021).
+\newblock Dermatology training in africa: successes and challenges.
+\newblock {\em Dermatologic Clinics}, 39(1):57--71.
+
+\bibitem[Nasr-Esfahani et~al., 2016]{7590963}
+Nasr-Esfahani, E., Samavi, S., Karimi, N., Soroushmehr, S., Jafari, M., Ward, K., and Najarian, K. (2016).
+\newblock Melanoma detection by analysis of clinical images using convolutional neural network.
+\newblock In {\em 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, pages 1373--1376.
+
+\bibitem[Nerson, 1992]{nerson1992applying}
+Nerson, J.-M. (1992).
+\newblock Applying object-oriented analysis and design.
+\newblock {\em Communications of the ACM}, 35(9):63--74.
+
+\bibitem[Nidhra and Dondeti, 2012]{nidhra2012black}
+Nidhra, S. and Dondeti, J. (2012).
+\newblock Black box and white box testing techniques-a literature review.
+\newblock {\em International Journal of Embedded Systems and Applications (IJESA)}, 2(2):29--50.
+
+\bibitem[Okur and Turkan, 2018]{okur2018survey}
+Okur, E. and Turkan, M. (2018).
+\newblock A survey on automated melanoma detection.
+\newblock {\em Engineering Applications of Artificial Intelligence}, 73:50--67.
+
+\bibitem[Pacheco and Krohling, 2020]{PACHECO2020103545}
+Pacheco, A.~G. and Krohling, R.~A. (2020).
+\newblock The impact of patient clinical information on automated skin cancer detection.
+\newblock {\em Computers in Biology and Medicine}, 116:103545.
+
+\bibitem[Pehamberger et~al., 1993]{PEHAMBERGER1993S356}
+Pehamberger, H., Binder, M., Steiner, A., and Wolff, K. (1993).
+\newblock In vivo epiluminescence microscopy: Improvement of early diagnosis of melanoma.
+\newblock {\em Journal of Investigative Dermatology}, 100(3, Supplement):S356--S362.
+
+\bibitem[P{\'e}rez et~al., 2021]{perez2021convolutional}
+P{\'e}rez, E., Reyes, O., and Ventura, S. (2021).
+\newblock Convolutional neural networks for the automatic diagnosis of melanoma: An extensive experimental study.
+\newblock {\em Medical image analysis}, 67:101858.
+
+\bibitem[P{\'e}rez and Ventura, 2021]{perez2021ensemble}
+P{\'e}rez, E. and Ventura, S. (2021).
+\newblock An ensemble-based convolutional neural network model powered by a genetic algorithm for melanoma diagnosis.
+\newblock {\em Neural Computing and Applications}, pages 1--20.
+
+\bibitem[Psaty and Halpern, 2009]{psaty2009current}
+Psaty, E.~L. and Halpern, A.~C. (2009).
+\newblock Current and emerging technologies in melanoma diagnosis: the state of the art.
+\newblock {\em Clinics in dermatology}, 27(1):35--45.
+
+\bibitem[Raschka, 2015]{raschka2015python}
+Raschka, S. (2015).
+\newblock {\em Python machine learning}.
+\newblock Packt publishing ltd.
+
+\bibitem[Rat et~al., 2018]{rat2018use}
+Rat, C., Hild, S., S{\'e}randour, J.~R., Gaultier, A., Quereux, G., Dreno, B., Nguyen, J.-M., et~al. (2018).
+\newblock Use of smartphones for early detection of melanoma: systematic review.
+\newblock {\em Journal of medical Internet research}, 20(4):e9392.
+
+\bibitem[Rigel et~al., 2005]{rigel2005abcde}
+Rigel, D.~S., Friedman, R.~J., Kopf, A.~W., and Polsky, D. (2005).
+\newblock Abcde—an evolving concept in the early detection of melanoma.
+\newblock {\em Archives of dermatology}, 141(8):1032--1034.
+
+\bibitem[Rossi et~al., 2022]{rossi2022cost}
+Rossi, J.~G., Rojas-Perilla, N., Krois, J., and Schwendicke, F. (2022).
+\newblock Cost-effectiveness of artificial intelligence as a decision-support system applied to the detection and grading of melanoma, dental caries, and diabetic retinopathy.
+\newblock {\em JAMA network open}, 5(3):e220269--e220269.
+
+\bibitem[Simmons and Holliday, 2019]{simmons2019comparison}
+Simmons, C. and Holliday, M.~A. (2019).
+\newblock A comparison of two popular machine learning frameworks.
+\newblock {\em Journal of Computing Sciences in Colleges}, 35(4):20--25.
+
+\bibitem[Skvara et~al., 2005]{skvara2005limitations}
+Skvara, H., Teban, L., Fiebiger, M., Binder, M., and Kittler, H. (2005).
+\newblock Limitations of dermoscopy in the recognition of melanoma.
+\newblock {\em Archives of dermatology}, 141(2):155--160.
+
+\bibitem[Sommerville, 2011]{sommerville2011software}
+Sommerville, I. (2011).
+\newblock {\em Software Engineering, 9/E}.
+\newblock Pearson Education India.
+
+\bibitem[Swanson et~al., 2002]{swanson2002biopsy}
+Swanson, N.~A., Lee, K.~K., Gorman, A., and Lee, H.~N. (2002).
+\newblock Biopsy techniques: diagnosis of melanoma.
+\newblock {\em Dermatologic clinics}, 20(4):677--680.
+
+\bibitem[Udrea et~al., 2020]{udrea2020accuracy}
+Udrea, A., Mitra, G., Costea, D., Noels, E., Wakkee, M., Siegel, D., de~Carvalho, T., and Nijsten, T. (2020).
+\newblock Accuracy of a smartphone application for triage of skin lesions based on machine learning algorithms.
+\newblock {\em Journal of the European Academy of Dermatology and Venereology}, 34(3):648--655.
+
+\bibitem[Wen et~al., 2021]{wen2021characteristics}
+Wen, D., Khan, S.~M., Xu, A.~J., Ibrahim, H., Smith, L., Caballero, J., Zepeda, L., de~Blas~Perez, C., Denniston, A.~K., Liu, X., et~al. (2021).
+\newblock Characteristics of publicly available skin cancer image datasets: a systematic review.
+\newblock {\em The Lancet Digital Health}.
+
+\bibitem[Yoon et~al., 2019]{yoon2019generalizable}
+Yoon, C., Hamarneh, G., and Garbi, R. (2019).
+\newblock Generalizable feature learning in the presence of data bias and domain class imbalance with application to skin lesion classification.
+\newblock In {\em International Conference on Medical Image Computing and Computer-Assisted Intervention}, pages 365--373. Springer.
+
+\bibitem[Zenone et~al., 2022]{zenone2022digital}
+Zenone, M., Zocchi, L., Moccia, C., Passerini, S., Sanavia, T., Fariselli, P., Broganelli, P., Ribero, S., Maule, M., and Quaglino, P. (2022).
+\newblock Digital dermoscopy monitoring of melanocytic lesions: Two novel calculators combining static and dynamic features to identify melanoma.
+\newblock {\em Journal of the European Academy of Dermatology and Venereology}, 36(3):391--402.
+
+\end{thebibliography}

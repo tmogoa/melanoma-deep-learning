@@ -1,5 +1,5 @@
 \documentclass[12pt, a4paper]{article}
-\usepackage{fontspec}
+% \usepackage{fontspec}
 \usepackage[english]{babel}
 \usepackage{sectsty}
 \usepackage{natbib}
@@ -88,7 +88,7 @@
 %%% END CHANGE NAME OF TOC %%%
 
 %%% SET MAIN FONT FAMILY %%%
-\setmainfont{Times New Roman}
+%% \setmainfont{Times New Roman}
 %%% END SET MAIN FONT FAMILY %%%
 
 \setstretch{1.5}
@@ -96,23 +96,23 @@
 \begin{document}
 \begin{center}
     \textbf{
-    A Deep Learning Model for the Segmentation and Classification of Melanoma Skin Lesions\\
-    % Classification of Non-dermoscopic Melanoma Lesion Images using Deep Learning\\
-    \vspace{70pt}
-    Ombaso Tony Mogoa\\
-    116814
-    ICS 4A\\
-    \vspace{70pt}
-    Supervisor Name\\
-    Orero, Joseph Onderi (Dr.)\\
-    \vspace{70pt}
-    Submitted in Partial Fulfilment of the Requirements of the Bachelor of Science in Informatics and Computer Science at Strathmore University\\
-    \vspace{70pt}
-    School of Computing and Engineering Sciences\\
-    Strathmore University\\
-    Nairobi, Kenya\\
-    \vspace{50pt}
-    December 2022
+        A Deep Learning Model for the Segmentation and Classification of Melanoma Skin Lesions\\
+        % Classification of Non-dermoscopic Melanoma Lesion Images using Deep Learning\\
+        \vspace{70pt}
+        Ombaso Tony Mogoa\\
+        116814
+        ICS 4A\\
+        \vspace{70pt}
+        Supervisor Name\\
+        Orero, Joseph Onderi (Dr.)\\
+        \vspace{70pt}
+        Submitted in Partial Fulfilment of the Requirements of the Bachelor of Science in Informatics and Computer Science at Strathmore University\\
+        \vspace{70pt}
+        School of Computing and Engineering Sciences\\
+        Strathmore University\\
+        Nairobi, Kenya\\
+        \vspace{50pt}
+        December 2022
     }
 \end{center}
 
@@ -170,21 +170,21 @@ Melanoma is the most fatal of skin cancers as it accounts for most skin cancer d
 \addcontentsline{toc}{section}{List of Abbreviations}
 \section*{List of Abbreviations}
 \begin{tabular}{l l l}
-  API & --- & Application Programming Interface\\
-  AUC & --- & Area Under Curve\\
-  CNN & --- & Convolutional Neural Network\\
-  ERD & --- & Entity Relationship Diagram\\
-  ETL & --- & Extract, Transform, Load\\
-  GPU & --- & Graphical Processing Unit\\
-  HTTPS & --- & Hypertext Transfer Protocol Secure\\
-  ML & --- & Machine Learning\\
-  NLP & --- & Natural Language Processing\\
-  OOAD & --- & Object Oriented Analysis and Design\\
-  RESTful & --- & Representational State Transfer - ful\\
-  UML & --- & Unified Modelling Language\\
-  URL & --- & Uniform Resource Locator\\
-  UV & --- & Ultra Violet Radiation\\
-  VGG & --- & Visual Geometry Group
+    API     & --- & Application Programming Interface     \\
+    AUC     & --- & Area Under Curve                      \\
+    CNN     & --- & Convolutional Neural Network          \\
+    ERD     & --- & Entity Relationship Diagram           \\
+    ETL     & --- & Extract, Transform, Load              \\
+    GPU     & --- & Graphical Processing Unit             \\
+    HTTPS   & --- & Hypertext Transfer Protocol Secure    \\
+    ML      & --- & Machine Learning                      \\
+    NLP     & --- & Natural Language Processing           \\
+    OOAD    & --- & Object Oriented Analysis and Design   \\
+    RESTful & --- & Representational State Transfer - ful \\
+    UML     & --- & Unified Modelling Language            \\
+    URL     & --- & Uniform Resource Locator              \\
+    UV      & --- & Ultra Violet Radiation                \\
+    VGG     & --- & Visual Geometry Group
 \end{tabular}
 
 \clearpage
@@ -292,22 +292,22 @@ Various studies conducted on the effectiveness of smartphone applications for th
 
 There also remains the problem of insufficient data owing to the smallness of public non-dermoscopic datasets. It is therefore possible that published models have overfitted the small datasets as \cite{yoon2019generalizable} point out. For instance, the model built by \cite{HAN20181529}, performed significantly lesser tested on the commercialised Edinburgh dataset which did not form part of the training set. In as much as the use of GANs to generate non-dermoscopic lesion images has been shown to improve diagnostic accuracy, GANs are generally hard to train properly~\citep{perez2021convolutional}. Even more reason for their unsuitability, at least presently, is whether there would be medical accreditation for the use of GANs to generate lesions images given that the classification of melanoma is a non-trivial task with a huge impact on the diagnosed patient.
 
-To improve the external validity of this study given the limited availability of large enough datasets~\citep{yoon2019generalizable}, this research was aimed at using an ensemble dataset comprising the MED-NODE dataset, PAD-UFES-20 dataset, DermIS dataset, DermQuest dataset and the Seven-Point Checklist Dermatology Dataset(7-point dataset). Table \ref{tab:datasets} shows a list of the datasets used, the publishers and the number of images they had. 
-    \begin{table}[h]
-        \centering
-        \begin{tabular}{|l|l|l|}
+To improve the external validity of this study given the limited availability of large enough datasets~\citep{yoon2019generalizable}, this research was aimed at using an ensemble dataset comprising the MED-NODE dataset, PAD-UFES-20 dataset, DermIS dataset, DermQuest dataset and the Seven-Point Checklist Dermatology Dataset(7-point dataset). Table \ref{tab:datasets} shows a list of the datasets used, the publishers and the number of images they had.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|}
         \hline
-        \textbf{Dataset} & \textbf{Publisher} & \textbf{No. of images}\\\hline
-        MED-NODE & \cite{giotis2015med} & 170\\\hline
-        PAD-UFES-20 & \cite{PACHECO2020103545} & 296\\\hline
-        7-point & \cite{8333693} & 827\\\hline
-        DermIS & \cite{dermis} & 69\\\hline
-        DermQuest & Galderma S.A. & 137\\\hline
-        \multicolumn{2}{|r|}{\textbf{Tota}l} & \textbf{1499}\\\hline
-        \end{tabular}
-        \caption{Table showing list of datasets used}
-        \label{tab:datasets}
-    \end{table}
+        \textbf{Dataset}                     & \textbf{Publisher}       & \textbf{No. of images} \\\hline
+        MED-NODE                             & \cite{giotis2015med}     & 170                    \\\hline
+        PAD-UFES-20                          & \cite{PACHECO2020103545} & 296                    \\\hline
+        7-point                              & \cite{8333693}           & 827                    \\\hline
+        DermIS                               & \cite{dermis}            & 69                     \\\hline
+        DermQuest                            & Galderma S.A.            & 137                    \\\hline
+        \multicolumn{2}{|r|}{\textbf{Tota}l} & \textbf{1499}                                     \\\hline
+    \end{tabular}
+    \caption{Table showing list of datasets used}
+    \label{tab:datasets}
+\end{table}
 \clearpage
 \subsection{Conceptual Framework}
 Figure \ref{fig:concept} shows the conceptual framework of the developed solution. All five datasets, as listed in Table \ref{tab:datasets}, were pre-processed which entailed resizing and centre-cropping to achieve uniformity. Data augmentation was then applied to expand the dataset by applying image manipulation techniques such as cropping, zooming, rotation and stretching. The lesions in the resulting set of images were then segmented using U-net CNN and used for training. The U-Net CNN was trained using the DermIS and DermNet datasets which provided binary segmentation masks for each lesion. Each of the machine learning models namely Visual Transformer, ResNet34, ResNet50, ResNet152,  InceptionV3 and Efficient-B7 were trained using lesion images resulting from the segmentation step and then tested through using a held-out validation set. The performance of the machine learning models was then compared and the most suitable model was picked and used to develop a mobile application for classifying melanoma skin lesions.
@@ -383,7 +383,7 @@ Expo was used to develop the mobile application. Expo is a framework built on to
 \subsubsection{Data Augmentation}
 According to \cite{perez2021convolutional}, data augmentation is a technique of expanding the size of a dataset by applying several random transformations to original images. Since non-dermoscopic datasets were small there was a need to augment them to reduce overfitting. \cite{perez2021convolutional}, in a comparative study showed that all the models used in the study substantially performed better with data augmentation.
 \subsubsection{Transfer Learning}
-According to \cite{perez2021convolutional}, transfer learning is a technique of reusing already trained models from a source task which has a lot of data for a different but related task. \cite{esteva2017dermatologist}, \cite{HAN20181529} and \cite{perez2021ensemble} all use transfer learning in the form of pre-trained deep learning models showing a performance improvement. Therefore transfer learning was applied in this study to increase model performance. 
+According to \cite{perez2021convolutional}, transfer learning is a technique of reusing already trained models from a source task which has a lot of data for a different but related task. \cite{esteva2017dermatologist}, \cite{HAN20181529} and \cite{perez2021ensemble} all use transfer learning in the form of pre-trained deep learning models showing a performance improvement. Therefore transfer learning was applied in this study to increase model performance.
 % \subsubsection{K-Fold Cross-Validation}
 % According to \cite{refaeilzadeh2009cross}, k-fold cross-validation is a technique of evaluating model performance by dividing the training dataset into k folds such that for each iteration k-1 folds are used for training while one fold is held out to be used for validation. K-fold cross-validation was used for validation since the dataset used was relatively small having 711 images.
 \clearpage
@@ -456,7 +456,7 @@ Figure \ref{fig:activity-diagram} shows the activity diagram for the developed s
 
 At the start of the activity, the user opens the mobile application and attempts a login action which succeeds if the user enters a valid username and password combination but fails otherwise. If the login attempt is successful, the user uses the mobile app to either take a photo of a lesion or select an existing image of a lesion. The resulting image is then uploaded to the web server by the mobile app. The web server performs normalization on the uploaded image through resizing, cropping and transformation. The ML model then performs lesion segmentation on the normalized image and subsequently classifies it as either malignant or benign. The results of classification are then relayed back to the web server which returns it to the mobile app which then displays it to the user. The user may then log out.
 \subsubsection{Class Diagram}
-Figure \ref{fig:class-diagram} shows the class diagram for the developed system. The system has three classes namely: User, Lesion and Model classes. The User class has the userId, email properties and the register and login methods. The userId property uniquely identifies a user. The register method creates a new account for a user. The login method authenticates a user. 
+Figure \ref{fig:class-diagram} shows the class diagram for the developed system. The system has three classes namely: User, Lesion and Model classes. The User class has the userId, email properties and the register and login methods. The userId property uniquely identifies a user. The register method creates a new account for a user. The login method authenticates a user.
 
 \begin{figure}[h]
     \centering
@@ -495,7 +495,7 @@ Figure \ref{fig:login} shows the login screen of the developed system. The user 
     \label{fig:login}
 \end{figure}
 
-On the registration screen, the user is required to enter an email, a new password and its confirmation. The registration is successful if the email address has not been taken and if both the password and its confirmation do match. 
+On the registration screen, the user is required to enter an email, a new password and its confirmation. The registration is successful if the email address has not been taken and if both the password and its confirmation do match.
 \begin{figure}[h]
     \centering
     \setlength{\fboxsep}{8pt}
@@ -586,35 +586,35 @@ This chapter discusses how the developed solution was implemented and tested. Th
 The minimum hardware specifications of the developed solution are as shown in Table \ref{tab:hardware} below. The developed solution is composed of a minimum of two devices interacting which include: a web server and a mobile device.
 \renewcommand{\arraystretch}{1.5}
 \setlength{\tabcolsep}{18pt}
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}c 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}c
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     \textbf{Device} &
     \textbf{Hardware} & \textbf{Description and Justification}\\\hline
-    \multirow{3}{4em}{Web server} & 
+    \multirow{3}{4em}{Web server} &
     CPU: at least 1 gigahertz clock speed & This is the minimum requirement for installing Ubuntu Server Edition operating system. Moreover, the machine learning model uses the CPU to perform inference.\\\cline{2-3}
     & 2 Gigabytes of RAM & This ensures that the Ubuntu Server OS runs smoothly and can also effectively host a web server capable of performing inference for image classification.\\\hline
     & 4 Gigabytes of disk space & Ubuntu Server Edition OS needs a minimum of 2.5 Gigabytes of disk space and the remaining 1.5 Gigabytes is space for installing software packages, storing web server code and storing image uploads.\\\hline
 
-    \multirow{3}{4em}{Mobile device} & 
+    \multirow{3}{4em}{Mobile device} &
     CPU: Quad Core 1.3 gigahertz clock speed & Required to run Android 5 OS and higher.\\\cline{2-3}
     & 1 Gigabyte of RAM & This is the minimum requirement to run Android 5 or higher.\\\cline{2-3}
     & 100 Megabytes of disk space & This storage space is required to install the application and to be able to take photos and store them.\\\hline
     \caption{Table showing hardware specifications}
     \label{tab:hardware}
 \end{xltabular}
-    
+
 % \end{longtable}
 \subsubsection{Software Specifications}
-The developed solution is composed of the following software components: a mobile application, and a RESTful API. The software specifications for the above software components are as shown in Table \ref{tab:software} below. 
+The developed solution is composed of the following software components: a mobile application, and a RESTful API. The software specifications for the above software components are as shown in Table \ref{tab:software} below.
 \clearpage
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}c 
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}c
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     \textbf{Software} & \textbf{Description and Justification}\\\hline
     Android 5+ and iOS 13+ & Since, the mobile application for the developed solution is built using Expo, which is a React Native framework, the mobile devices need to run Android 5+ and iOS 13+.\\\hline
@@ -631,14 +631,14 @@ To train the model used in the developed solution and five different but related
 \begin{table}[h]
     \centering
     \begin{tabular}{|l|l|l|}
-    \hline
-    \textbf{Dataset} & \textbf{Publisher} & \textbf{No. of images}\\\hline
-    MED-NODE & \cite{giotis2015med} & 170\\\hline
-    PAD-UFES-20 & \cite{PACHECO2020103545} & 296\\\hline
-    7-point & \cite{8333693} & 827\\\hline
-    DermIS & \cite{dermis} & 69\\\hline
-    DermQuest & Galderma S.A. & 137\\\hline
-    \multicolumn{2}{|r|}{\textbf{Tota}l} & \textbf{1499}\\\hline
+        \hline
+        \textbf{Dataset}                     & \textbf{Publisher}       & \textbf{No. of images} \\\hline
+        MED-NODE                             & \cite{giotis2015med}     & 170                    \\\hline
+        PAD-UFES-20                          & \cite{PACHECO2020103545} & 296                    \\\hline
+        7-point                              & \cite{8333693}           & 827                    \\\hline
+        DermIS                               & \cite{dermis}            & 69                     \\\hline
+        DermQuest                            & Galderma S.A.            & 137                    \\\hline
+        \multicolumn{2}{|r|}{\textbf{Tota}l} & \textbf{1499}                                     \\\hline
     \end{tabular}
     \caption{Table showing list of datasets to be used}
     \label{tab:datasets2}
@@ -650,9 +650,9 @@ Before the ensemble dataset could be used, it had to be pre-processed. Using the
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        \textbf{Class} & \textbf{Count} & \textbf{Percentage}\\\hline
-        Malignant Melanoma & 493 & 32.89\%\\\hline
-        Benign Nevus(naevi) & 1006 & 67.11\%\\\hline
+        \textbf{Class}      & \textbf{Count} & \textbf{Percentage} \\\hline
+        Malignant Melanoma  & 493            & 32.89\%             \\\hline
+        Benign Nevus(naevi) & 1006           & 67.11\%             \\\hline
     \end{tabular}
     \caption{Table showing number of images for each class}
     \label{tab:class_img_count}
@@ -663,11 +663,11 @@ The combined dataset was split into train, test and validation subsets as shown 
 \begin{table}[h]
     \centering
     \begin{tabular}{|c|c|}
-    \hline
-        \textbf{Subset} & \textbf{Percentage}\\\hline
-        Train Set & 70\% \\\hline
-        Validation Set & 15\%\\\hline
-        Evaluation Set & 15\%\\\hline
+        \hline
+        \textbf{Subset} & \textbf{Percentage} \\\hline
+        Train Set       & 70\%                \\\hline
+        Validation Set  & 15\%                \\\hline
+        Evaluation Set  & 15\%                \\\hline
     \end{tabular}
     \caption{Table showing training, validation and evaluation sets split}
     \label{tab:dataset-split}
@@ -691,7 +691,7 @@ This section discusses how the segmentation and classification models were train
 The loss function used to train classification models was the Cross-Entropy Loss function whose equation is shown below, where $log$ is natural logarithm, $p_{o,c}$ is the predicted probability for a class $c$, $y_{o,c}$ is the binary target label for a class $c$ and $M$ is the number of classes which in this case is $2$.
 
 \begin{equation}
--\sum_{c=1}^My_{o,c}\log(p_{o,c})
+    -\sum_{c=1}^My_{o,c}\log(p_{o,c})
 \end{equation}
 \label{eq:5.1}
 \myequations{Cross-Entropy loss funtion}
@@ -704,58 +704,58 @@ Before feeding images to the models, images were read from storage to memory and
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
-         \textbf{Channel} & \textbf{Mean} & \textbf{Standard deviation}  \\\hline
-         Red & 0.485 & 0.229\\\hline
-         Green & 0.456 & 0.224\\\hline
-         Blue & 0.406 & 0.224\\\hline         
+        \textbf{Channel} & \textbf{Mean} & \textbf{Standard deviation} \\\hline
+        Red              & 0.485         & 0.229                       \\\hline
+        Green            & 0.456         & 0.224                       \\\hline
+        Blue             & 0.406         & 0.224                       \\\hline
     \end{tabular}
     \caption{Table showing image standardization values for RGB channels}
     \label{tab:mean-std-values}
-\end{table} 
+\end{table}
 
 \subsubsection{Training U-Net Segmentation Model}
-According to the study conducted by \cite{codella2017deep}, image segmentation leads to better performance in the classification of melanoma skin lesions. This study was the basis of the incorporation of image segmentation during model training. The image segmentation model used was U-Net which was implemented and trained using the Dermis and DermQuest datasets which included lesion images and ground truth segmentation masks. The two datasets were combined and splits into train and validation sets comprising 80\% and 20\% of the total number of images respectively. In order to improve segmentation performance and reduce overfitting data augmentation was applied comprising of probabilistic transformations of rotation, horizontal flip and vertical flip. 
+According to the study conducted by \cite{codella2017deep}, image segmentation leads to better performance in the classification of melanoma skin lesions. This study was the basis of the incorporation of image segmentation during model training. The image segmentation model used was U-Net which was implemented and trained using the Dermis and DermQuest datasets which included lesion images and ground truth segmentation masks. The two datasets were combined and splits into train and validation sets comprising 80\% and 20\% of the total number of images respectively. In order to improve segmentation performance and reduce overfitting data augmentation was applied comprising of probabilistic transformations of rotation, horizontal flip and vertical flip.
 
-The loss function used was the Cross-Entropy Loss function depicted in Equation 5.1. Before feeding images to the model images were read from storage to memory and resized to $350 * 350$ pixels, standardised using a mean of 0 and standard deviation of 1 for the red, green and blue channels and finally converted into Pytorch tensors. 
+The loss function used was the Cross-Entropy Loss function depicted in Equation 5.1. Before feeding images to the model images were read from storage to memory and resized to $350 * 350$ pixels, standardised using a mean of 0 and standard deviation of 1 for the red, green and blue channels and finally converted into Pytorch tensors.
 
 \subsubsection{Exploring Learning Rate Schedulers}
-Various learning rate schedulers were used including Cosine Annealing with Warm Restarts, One Cycle learning rate scheduler and the Step Learning rate scheduler. Upon training and evaluation, the One Cycle learning rate scheduler was chosen since it had the best evaluation metrics performance as shown in Table \ref{tab:lr-schedulers} below (highest scores per metric are in bold). 
+Various learning rate schedulers were used including Cosine Annealing with Warm Restarts, One Cycle learning rate scheduler and the Step Learning rate scheduler. Upon training and evaluation, the One Cycle learning rate scheduler was chosen since it had the best evaluation metrics performance as shown in Table \ref{tab:lr-schedulers} below (highest scores per metric are in bold).
 
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     \textbf{Learning rate scheduler} & \textbf{Accuracy} & \textbf{F1-Measure} & \textbf{Sensitivity} & \textbf{Specificity}\\\hline
     Cosine Annealing with Warm Restarts & 0.7753 & 0.7753 & 0.8410 & 0.64473\\\hline
     One Cycle & \textbf{0.8326} & \textbf{0.8716} & 0.8543 & \textbf{0.7894}\\\hline
     Step & 0.8061 & 0.8061 & \textbf{0.9006} & 0.6184\\\hline
-\caption{Table showing testing results for various learning rate schedulers}
+    \caption{Table showing testing results for various learning rate schedulers}
     \label{tab:lr-schedulers}
 \end{xltabular}
 
 \subsubsection{Effect of Data Augmentation}
 According to \cite{perez2021convolutional}, data augmentation is a technique of expanding the size of a dataset by applying several random transformations to original images. The Albumenation library developed by \cite{buslaev2020albumentations} was used where a series of transformations were applied to the images with a given probability of being applied. Applying these transformations had the effect of increasing the number of samples in the dataset without actually saving new images to storage since the transformations are applied with a given probability, hence different images with different transformations were fed to the model across the epochs. The transformation applied and listed in Table \ref{tab:augmentations} below.
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
-        \textbf{Transformation} & Description & Probability \\\hline
-         Random rotate 90 degrees & Randomly rotate the input by 90 degrees zero or more times. & 0.5\\\hline
-         Flip & Flip the input either horizontally, vertically or both. & 0.5\\\hline
-         Transpose & Transpose the input by swapping rows and columns. & 0.5\\\hline
-         Additive Gaussian Noise & Add Gaussian noise & 0.5\\\hline
-         Blur & Blur the input image using a random-sized kernel. & 0.05\\\hline
-         Motion blur & Apply motion blur to the input image. & 0.1\\\hline
-         Median blur & Blur the input image using a median filter & 0.05\\\hline
-         Random brightness and contrast & Randomly change the brightness and contrast of the input image. & 0.3\\\hline
-         Hue, saturation and value & Randomly change the hue, saturation and value of the input image. & 0.3\\\hline
-         Gaussian Blur & Blur the input image using a Gaussian filter with a random kernel size. & 0.5\\\hline  
+    \textbf{Transformation} & Description & Probability \\\hline
+    Random rotate 90 degrees & Randomly rotate the input by 90 degrees zero or more times. & 0.5\\\hline
+    Flip & Flip the input either horizontally, vertically or both. & 0.5\\\hline
+    Transpose & Transpose the input by swapping rows and columns. & 0.5\\\hline
+    Additive Gaussian Noise & Add Gaussian noise & 0.5\\\hline
+    Blur & Blur the input image using a random-sized kernel. & 0.05\\\hline
+    Motion blur & Apply motion blur to the input image. & 0.1\\\hline
+    Median blur & Blur the input image using a median filter & 0.05\\\hline
+    Random brightness and contrast & Randomly change the brightness and contrast of the input image. & 0.3\\\hline
+    Hue, saturation and value & Randomly change the hue, saturation and value of the input image. & 0.3\\\hline
+    Gaussian Blur & Blur the input image using a Gaussian filter with a random kernel size. & 0.5\\\hline
     \caption{Table listing data augmentation transformations}
     \label{tab:augmentations}
 \end{xltabular}
@@ -779,36 +779,36 @@ The use of data augmentation led to significantly better performance as compared
 \end{figure}
 
 
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     & \textbf{Accuracy} & \textbf{F1-Measure} & \textbf{Sensitivity} & \textbf{Specificity}\\\hline
     Without augmentation & 0.7929 & 0.7929 & \textbf{0.8741} & 0.6316\\\hline
     With augmentation & \textbf{0.8326} & \textbf{0.8716} & 0.8543 & \textbf{0.7894}\\\hline
-\caption{Table showing testing results of data augmentation experiments}
+    \caption{Table showing testing results of data augmentation experiments}
     \label{tab:augmentation-results}
 \end{xltabular}
 
 \subsubsection{Effect of Image Segmentation}
 Using a pre-trained ResNet34 model, performance was compared when training the model using segmented lesion images and non-segmented lesion images. As shown in Table \ref{tab:segementation} below, segmentation led to a poorer performance as compared to training without image segmentation across all evaluation metrics (highest scores per metric are in bold). As a result, the developed solution does not include image segmentation. These results affirm the findings of \cite{7493528}, who asserts that image segmentation is a non-trivial task which risks leaving out important features hence negatively impacting classification performance.
 
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     & \textbf{Accuracy} & \textbf{F1-Measure} & \textbf{Sensitivity} & \textbf{Specificity}\\\hline
     With segmentation & 0.7577 & 0.7577 & 0.8476 & 0.5789\\\hline
     Without segmentation & \textbf{0.8326} & \textbf{0.8716} & \textbf{0.8543} & \textbf{0.7894}\\\hline
-\caption{Table showing testing results of image segmentation experiments}
+    \caption{Table showing testing results of image segmentation experiments}
     \label{tab:segementation}
 \end{xltabular}
 
@@ -819,28 +819,28 @@ In order to test and evaluate the models trained the validation set and evaluati
 \subsubsection{Evaluation Metrics Used}
 Evaluation metrics used include accuracy, sensitivity, specificity, F1-measure, and dice score which are expounded on in Table \ref{tab:metrics} below.
 
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}l 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}c
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}l
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}c
+        | }
     \hline
     \textbf{Metric} & \textbf{Description} & \textbf{Equation}\\\hline
-    Sensitivity & Measures model's ability to predict true positives as positive. & 
+    Sensitivity & Measures model's ability to predict true positives as positive. &
     \begin{equation}
         = \frac{TP}{TP+FN}
     \end{equation}
     \label{eq:5.2}
     \myequations{Equation for sensitivity}
     \\\hline
-    Specificity & Measures model's ability to predict true negatives as negative & 
-    \begin{equation}   
+    Specificity & Measures model's ability to predict true negatives as negative &
+    \begin{equation}
         \frac{TN}{FP+TN}
     \end{equation}
     \label{eq:5.3}
     \myequations{Equation for specificity}
     \\\hline
-    F1-Measure & Harmonic mean of precision and recall & 
+    F1-Measure & Harmonic mean of precision and recall &
     \begin{equation}
         = \frac{2*TP}{2*TP+FP+FN}
     \end{equation}
@@ -854,30 +854,31 @@ Evaluation metrics used include accuracy, sensitivity, specificity, F1-measure, 
     \label{eq:5.5}
     \myequations{Equation for accuracy}
     \\\hline
-    Dice Score & Is a metric used to gauge image segmentation performance which is the ratio between twice the area of overlap between the region of an image and its segmentation mask, to the total number of pixels in an image and its segmentation mask & 
+    Dice Score & Is a metric used to gauge image segmentation performance which is the ratio between twice the area of overlap between the region of an image and its segmentation mask, to the total number of pixels in an image and its segmentation mask &
     \begin{equation}
-        = \frac{2 |U \cap V|}{|U \cup V|}
+        = \frac{2 |U \cap V| }{ |U \cup V| }
     \end{equation}
     \label{eq:5.6}
     \myequations{Equation for dice score}
     \\\hline
-    % AUROC Score & Area under true positive ratio against false positive ratio &  Area under ROC curve\\\hline
-\caption{Table showing evaluation metrics used}
+    % AUROC Score & Area under true positive ratio against false positive ratio & Area under ROC curve\\\hline
+    \caption{Table showing evaluation metrics used}
     \label{tab:metrics}
 \end{xltabular}
+
 
 \subsubsection{Experimental Results}
 The U-Net model was trained to segment skin lesions using the DermIS and DermQuest datasets which had ground truth image segmentation marks. The U-Net model obtained an accuracy of 0.9232 and a dice score of 0.7414 on its validation set.
 
 Table \ref{tab:exp-results} show the performance metrics of the classification models resulting from training (the highest scores per metric are in bold). The models were trained using the one-cycle learning rate scheduler, with data augmentation applied and without image segmentation.
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     \textbf{Model} & \textbf{Accuracy} & \textbf{F1-Measure} & \textbf{Sensitivity} & \textbf{Specificity} & \textbf{Average}\\\hline
     Resnet34 & \textbf{0.8326} & 0.8716 & 0.8543 & 0.7894 & \textbf{0.8370}\\\hline
@@ -886,7 +887,7 @@ Table \ref{tab:exp-results} show the performance metrics of the classification m
     InceptionV3 & 0.8194 & 0.8707 & \textbf{0.9139} &  0.6316 & 0.8089\\\hline
     EfficientNetV2 & 0.8194 & 0.8638 & 0.8609 & 0.7368 & 0.8202\\\hline
     VisionTransformer & 0.8282 & \textbf{0.8762} & 0.9139 & 0.6579 & 0.8190\\\hline
-\caption{Table showing testing results for various pre-trained models}
+    \caption{Table showing testing results for various pre-trained models}
     \label{tab:exp-results}
 \end{xltabular}
 
@@ -906,20 +907,20 @@ Table \ref{tab:testing-results-api} shows the results of black box testing carri
 
 \renewcommand{\arraystretch}{1.0}
 \setlength{\tabcolsep}{6pt}
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     \textbf{Test Case} & \textbf{Description} & \textbf{Test Data} & \textbf{Result} & \textbf{Test Verdict}\\\hline
     TC01: Obtaining prediction for a lesion image & Attempt made to upload image to API, get inference and store record in database & POST HTTP request to http://<ip address>:port/api/lesions/<id>, where <id> is the user's id & Inference result returned for image and new record created for it. & Pass\\\hline
     TC02: Retrieving list of past predictions & Attempt made to retrieve list of past predictions for a given user & GET HTTP request to http://<ip address>:port/api/lesions/<id>, where <id> is the user id of the currently logged in user. & JSON array of existing predictions in the lesion table is returned. & Pass\\\hline
     TC03: Deleting past prediction & Attempt made to delete past prediction from database. & DELETE HTTP request to http://<ip address>:port/api/lesions/<id>, where <id> is an id for a well-known past prediction & Message for successful deletion returned and recorded deleted from lesions table & Pass\\\hline
-    
-\caption{Table showing testing results for the RESTful API}
+
+    \caption{Table showing testing results for the RESTful API}
     \label{tab:testing-results-api}
 \end{xltabular}
 
@@ -927,13 +928,13 @@ Table \ref{tab:testing-results-app} below shows the results of the testing carri
 
 \renewcommand{\arraystretch}{1.0}
 \setlength{\tabcolsep}{6pt}
-\begin{xltabular}{1\textwidth} { 
-  | >{\raggedright\arraybackslash}X 
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  | >{\raggedright\arraybackslash}X
-  |}
+\begin{xltabular}{1\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X
+        |}
     \hline
     \textbf{Test Case} & \textbf{Description} & \textbf{Test Data} & \textbf{Result} & \textbf{Test Verdict}\\\hline
     TC04: Taking lesion photo & Attempt made to take a photo of skin lesion & Tap button with camera icon then take photo & User is redirected to the camera app and photo taken and saved to device storage and displayed to user in the app. & Pass\\\hline
@@ -941,7 +942,7 @@ Table \ref{tab:testing-results-app} below shows the results of the testing carri
     TC06: Uploading lesion photo for inference & Attempt made to upload and obtain inference for a lesion photo & Tap camera icon button, then take lesion photo, tap the check icon and wait & User is directed to camera app, takes photo, photo is successfully uploaded and inference results displayed. & Pass\\\hline
     TC07: Viewing past predictions & Attempt made to obtain a prediction and confirm its presence in history of past predictions & Tap camera icon button, take a photo, upload photo and get prediction. Then press back and click on history icon button & After obtaining prediction, a record of the new prediction was seen to appear under the list of past predictions. & Pass\\\hline
     TC08: Deleting past prediction & Attempt made to delete past prediction entry & Tap history icon and press delete bin icon of an entry & On pressing the delete bin icon for an entry, the entry is removed from list of past predictions. & Pass\\\hline
-    
+
     \caption{Table showing testing results for the mobile application}
     \label{tab:testing-results-app}
 \end{xltabular}
@@ -1012,15 +1013,15 @@ In view of the limitation on the size of melanoma skin lesion datasets, future w
 \end{figure}
 \clearpage
 \begin{landscape}
-\thispagestyle{empty}
-\subsection*{Appendix II: Gantt Chart}
-\addcontentsline{toc}{subsection}{Appendix II: Gantt Chart}
-\begin{figure}[h]
-    \centering
-     \includegraphics[scale=0.34]{gantt.jpg}
-    \caption*{Appendix I: Gantt chart showing project timeline}
-\end{figure}
-\vfill
-\raisebox{0pt}{\makebox[\linewidth]{\thepage}}
+    \thispagestyle{empty}
+    \subsection*{Appendix II: Gantt Chart}
+    \addcontentsline{toc}{subsection}{Appendix II: Gantt Chart}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.34]{gantt.jpg}
+        \caption*{Appendix I: Gantt chart showing project timeline}
+    \end{figure}
+    \vfill
+    \raisebox{0pt}{\makebox[\linewidth]{\thepage}}
 \end{landscape}
 \end{document}
